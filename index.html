@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Google Classroom</title>
-
     <link rel="icon" type="image/x-icon" href="https://gstatic.com">
     <style>
         html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #1a1a1a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -22,15 +21,13 @@
 
 <script>
 function launch() {
-
     const target = "https://wingdemon.net";
-
     const win = window.open('about:blank', '_blank');
 
     win.document.body.style.margin = "0";
     win.document.body.style.height = "100vh";
     win.document.title = "Assignment Details"; 
-
+    
     const link = win.document.createElement('link');
     link.rel = 'icon';
     link.href = 'https://gstatic.com';
@@ -42,15 +39,13 @@ function launch() {
     iframe.style.height = "100%";
     iframe.style.border = "none";
     iframe.allowFullscreen = true;
+
     win.document.body.appendChild(iframe);
 
     win.addEventListener('keydown', (e) => {
         if (e.key.toLowerCase() === "q") { win.close(); }
     });
-
-    window.location.replace("https://google.com");
 }
 </script>
-
 </body>
 </html>
